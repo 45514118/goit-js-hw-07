@@ -27,7 +27,7 @@ createGalleryMarkup(galleryItems);
 gallery.addEventListener("click", openLargeImg);
 
 function openLargeImg(event) {
-  e.prevenDefault();
+  event.preventDefault();
   if (event.target.nodeName !== "IMG") {
     return;
   }
