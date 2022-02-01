@@ -46,4 +46,3 @@ function openLargeImg(event) {
     instance.close();
   }
 }
-console.log(galleryItems);
