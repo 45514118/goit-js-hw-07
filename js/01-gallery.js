@@ -44,5 +44,6 @@ function openLargeImg(event) {
       return;
     }
     instance.close();
+    document.removeEventListener("keydown", closeLargeImg);
   }
 }

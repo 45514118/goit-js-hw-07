@@ -6,9 +6,11 @@ function createGalleryMarkup(galleryItems) {
   const markup = galleryItems
     .map((galleryItem) => {
       return `
+        <li>
         <a class="gallery__item" href="${galleryItem.original}">
         <img class="gallery__image" src="${galleryItem.preview}" alt="${galleryItem.description}" />
         </a>
+        </li>
         `;
     })
     .join("");
